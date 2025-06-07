@@ -15,7 +15,7 @@ public class ToDoController {
 		this.toDoService = toDoService;
 	}
 	
-	@GetMapping("/todos")
+	@GetMapping("/todo")
 	public String showToDoList(Model model) {
 		model.addAttribute("todoList",toDoService.findAll());
 		return "todoview";	
